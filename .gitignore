@@ -1,0 +1,55 @@
+# WordPressのコアファイルを無視（通常Gitで管理しない）
+/wp-admin/
+/wp-includes/
+
+# アップロードされたメディアファイルを無視
+/wp-content/uploads/
+
+# キャッシュ系プラグインのキャッシュを無視
+/wp-content/cache/
+/wp-content/advanced-cache.php
+
+# セッションやトランジェントキャッシュのファイル
+/wp-content/session-tokens/
+/wp-content/sessions/
+
+# プラグインとテーマのディレクトリ（必要な場合のみ無視）
+# 通常、プラグインとテーマは手動でインストールすることが多いので、すべて無視したい場合:
+/wp-content/plugins/
+/wp-content/themes/
+
+# 特定のテーマ・プラグインを除外しない場合は個別に設定
+# カスタムテーマやプラグインを管理したい場合は無視しない:
+/wp-content/themes/your-custom-theme/
+/wp-content/plugins/your-custom-plugin/
+
+# データベース設定ファイルを無視
+wp-config.php
+
+# OSやIDEによって生成される不要なファイルを無視
+.DS_Store
+Thumbs.db
+
+# Logファイルを無視
+*.log
+
+# その他一時ファイルを無視
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Node.js関連（テーマ開発やプラグイン開発で使っている場合）
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Composer関連（PHPの依存管理をしている場合）
+vendor/
+composer.lock
+
+# 環境設定ファイル
+.env
+.env.local
+.env.production
+.env.*.local
